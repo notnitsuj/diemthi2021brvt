@@ -4,3 +4,6 @@
 `pip install bs4`
 
 `pip install selenium`
+
+## Download csv file
+https://tinyurl.com/csvdiembrvt2021
