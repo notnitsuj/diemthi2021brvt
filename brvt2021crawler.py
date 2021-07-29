@@ -10,11 +10,13 @@ driver.get(url)
 diemthi = []
 
 # Loop through all students
-for sbd in range (52000001, 52013197):
+for sbd in range (52000001, 52013196):
     # Enter ID
     description = driver.find_element_by_id('txtkeyword')
     description.clear()
     description.send_keys(sbd, webdriver.common.keys.Keys.ENTER)
+
+    # Page source
     html = driver.page_source
     page = BeautifulSoup(html, 'lxml')
 
@@ -37,6 +39,10 @@ for sbd in range (52000001, 52013197):
             diem['KHXH'] = monthi[15].text
             diem['Anh'] = monthi[16].text
             diemthi.append(diem.copy())
+
+# End session
+driver.quit()
+print('Finished.')
 
 # Export as csv
 keys = diemthi[0].keys()
