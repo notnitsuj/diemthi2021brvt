@@ -32,11 +32,9 @@ for sbd in range (52000001, 52013196):
             diem['Ly'] = monthi[8].text
             diem['Hoa'] = monthi[9].text
             diem['Sinh'] = monthi[10].text
-            diem['KHTN'] = monthi[11].text
             diem['Su'] = monthi[12].text
             diem['Dia'] = monthi[13].text
             diem['GDCD'] = monthi[14].text
-            diem['KHXH'] = monthi[15].text
             diem['Anh'] = monthi[16].text
             diemthi.append(diem.copy())
 
